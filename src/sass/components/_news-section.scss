@@ -4,6 +4,13 @@
   display: flex;
   justify-content: space-between;
   gap: 50px;
+
+  @include media-tablet {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
 }
 
 .news-section__image {
@@ -14,6 +21,11 @@
   min-height: 300px;
   max-height: 386px;
   flex-shrink: 1;
+
+  @include media-tablet {
+    width: 100%;
+    max-width: inherit;
+  }
 
   img {
     width: 100%;
@@ -31,6 +43,11 @@
   min-width: 350px;
   overflow: hidden;
   flex-shrink: 3;
+
+  @include media-tablet {
+    width: 100%;
+    max-width: inherit;
+  }
 }
 
 .news-section__data {
