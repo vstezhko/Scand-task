@@ -1,0 +1,12 @@
+@mixin font ($size, $height: $size, $weight, $style: normal) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin media-desktop-s {
+  @media screen and (max-width: 1100px) {
+    @content
+  }
+}

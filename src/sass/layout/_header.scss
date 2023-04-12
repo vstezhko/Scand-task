@@ -1,0 +1,22 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 56px;
+  padding-bottom: 45px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navigation__link {
+  cursor: pointer;
+
+  &:hover {
+    .nav-link-font {
+      color: $color-brand-1-light-s;
+    }
+  }
+}

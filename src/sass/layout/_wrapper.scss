@@ -1,0 +1,11 @@
+.wrapper {
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: $content-width;
+  margin: 0 auto;
+
+  @include media-desktop-s {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

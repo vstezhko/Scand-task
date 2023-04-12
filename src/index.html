@@ -3,10 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="assets/logo-favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="assets/logo-icon.svg" type="image/svg+xml">
     <title>Boldo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    test
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo-icon.svg" alt="logo">
+                    <h1>Boldo</h1>
+                </a>
+            </div>
+        <div class="header__navigation">
+            <ul class="navigation">
+                <li class="navigation__link"><a class="nav-link-font">Product</a></li>
+                <li class="navigation__link"><a class="nav-link-font">Service</a></li>
+                <li class="navigation__link"><a class="nav-link-font">About</a></li>
+                <li class="navigation__link nav-btn"><a class="nav-link-btn-font">Log In</a></li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section class="title-section">
+            <div class="wrapper title-section__wrapper">
+                <p class="paragraphs-s paragraphs-s_colored">Blog</p>
+                <h2>Thoughts and words</h2>
+            </div>
+        </section>
+        <section class="news-section">
+            <a href="#">
+                <div class="wrapper news-section__wrapper">
+                    <div class="news-section__image">
+                        <img src="assets/news-image.png" alt="news-image">
+                    </div>
+                    <div class="news-section__description">
+                        <div class="news-section__data">
+                            <p class="category-title">Category</p>
+                            <p class="paragraphs-xs paragraphs-xs_gray category-date">November 22, 2021</p>
+                        </div>
+                        <h3 class="news-section__title">Pitch termsheet backing validation focus release.</h3>
+                        <div class="news-section__author">
+                            <div class="author-photo">
+                                <img src="assets/author-Chandler-Bing.png" alt="author-photo">
+                            </div>
+                            <p class="paragraphs-xs author-name">Chandler Bing</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </section>
+
+    </main>
 </body>
 </html>

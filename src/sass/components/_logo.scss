@@ -1,0 +1,10 @@
+.logo {
+  img svg path {
+    fill: $color-brand-1;
+  }
+  a {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+}
