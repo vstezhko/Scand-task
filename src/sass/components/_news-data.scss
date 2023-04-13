@@ -1,0 +1,16 @@
+.news-data {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.news-data__category-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 3;
+}
+
+.news-data__category-date {
+  flex-shrink: 0;
+}

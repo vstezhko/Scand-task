@@ -1,0 +1,27 @@
+.author {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+}
+
+.author__photo {
+  width: 3.2rem;
+  height: 3.2rem;
+  overflow: hidden;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.author__name {
+  flex-shrink: 3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

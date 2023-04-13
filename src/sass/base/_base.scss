@@ -25,17 +25,28 @@ a {
 }
 
 .badge {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 1px 14px;
-  gap: 10px;
+  position: relative;
+  &:after {
+    content: 'Hiring!';
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1px 14px;
+    gap: 10px;
+    width: fit-content;
+    position: absolute;
+    top: 3px;
+    right: 10px;
 
-  /* Green */
-  background: #65E4A3;
-  border-radius: 120px;
+    background: $color-brand-2;
+    border-radius: 120px;
 
-  @include font (1.3rem, 2.8rem, 700);
-  /* Dark Blue */
-  color: #0A2640;
+    @include font (1.3rem, 2.8rem, 700);
+    color: $color-brand-1;
+
+    @include media-desktop-s {
+      right: -10px;
+    }
+
+  }
 }

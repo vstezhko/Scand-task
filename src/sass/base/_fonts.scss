@@ -12,12 +12,12 @@ h3 {
   font-family: 'Manrope', sans-serif;
   @include font (4.8rem, 7.2rem, 400);
 
-  &_white {
+  &.h3_white {
     color: $white;
   }
 
-  &_black {
-    color: $white;
+  &.h3_black {
+    color: $black;
   }
 }
 
@@ -56,12 +56,12 @@ h3 {
   }
 }
 
-.paragraphs-s {
+.paragraphs-s, %paragraphs-s {
   font-family: 'Open Sans', sans-serif;
   @include font (2rem, 3.2rem, 400);
 
   &_black {
-    color: $white;
+    color: $black;
   }
 
   &_colored {
@@ -75,9 +75,9 @@ h3 {
   }
 }
 
-.btn-font {
+.btn-font, %btn-font {
   font-family: 'Open Sans', sans-serif;
-  @include font (2rem, 2.8rem, 700);
+  @include font (2rem, 2.48rem, 700);
   /* Dark Blue */
 
   color: $color-brand-1;
