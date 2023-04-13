@@ -8,4 +8,9 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  @include media-mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

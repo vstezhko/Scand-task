@@ -10,4 +10,9 @@
   * {
     text-align: center;
   }
+
+  @include media-mobile {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }

@@ -6,6 +6,7 @@
   /* Dark Blue */
   border: 2px solid $color-brand-1;
   border-radius: 24px;
+  transition: all 0.3s ease-in;
 
   &:hover {
     border: 2px solid $color-brand-1-light-m;
@@ -21,15 +22,26 @@
   gap: 8px;
   padding: 16px 56px;
   width: fit-content;
+  transition: all 0.3s ease-in;
 
   &_bordered {
     border: 2px solid $color-brand-1;
     border-radius: 56px;
+
+    &:hover {
+      border: 2px solid $color-brand-1-light-m;
+      background-color: $color-brand-1-light-m;
+    }
   }
 
   &_colored {
     border: 2px solid $color-brand-2;
     border-radius: 56px;
     background: $color-brand-2;
+
+    &:hover {
+      border: 2px solid $color-brand-1-light-m;
+      background-color: $color-brand-1-light-m;
+    }
   }
 }
