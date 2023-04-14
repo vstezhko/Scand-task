@@ -11,9 +11,9 @@
     "start": "webpack serve",
     "dev": "webpack --define-process-env-node-env development",
     "build": "webpack --define-process-env-node-env production",
-    "clear": "rd /s /q shelter",
+    "clear": "rd /s /q dist",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d shelter"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",

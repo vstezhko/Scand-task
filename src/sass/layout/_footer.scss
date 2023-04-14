@@ -10,6 +10,10 @@
   @include media-desktop-s {
     justify-content: center;
     padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @include media-tablet {
+    padding-bottom: 50px;
   }
 }
 
@@ -32,6 +36,7 @@
 
   @include media-desktop-s {
     margin-bottom: 30px;
+    text-align: center;
   }
 }
 
@@ -63,11 +68,17 @@
 
   ul {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include media-desktop-s {
+      align-items: center;
+    }
   }
 
   li{
     margin-bottom: 3.2rem;
-    width: 100%;
+    width: fit-content;
     cursor: pointer;
     transition: color 0.3s ease-in;
     @include media-desktop-s {
