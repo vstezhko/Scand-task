@@ -1,0 +1,169 @@
+.card_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+
+  h5 {
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  h6 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+
+  .item-description-font {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 130%;
+  }
+
+  .add-info-font {
+    font-size: 10px;
+  }
+}
+
+
+.card {
+  width: 210px;
+  height: 220px;
+  padding: 35px 17px 25px;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  align-items: flex-end;
+  color: #838383;
+  position: relative;
+
+  &_colored {
+    background-color: #3CDE96;
+    color: white;
+  }
+
+  .card__star {
+    position: absolute;
+    top: 26px;
+    left: 19px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+
+    &_white {
+      background-color: rgba(54, 54, 54, 0.24);
+      background-image: url("assets/star-white.svg");
+    }
+
+    &_blue {
+      background-image: url("assets/star-blue.svg");
+    }
+  }
+
+  .card__title {
+    text-align: end;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 12px;
+    max-width: 125px;
+  }
+
+  .card__description {
+    margin-bottom: 8px;
+    flex-grow: 2;
+
+    * {
+      text-align: end;
+    }
+
+    li {
+      &:nth-child(n+4) {
+        display: none;
+      }
+    }
+  }
+
+  %todo-icon {
+    content: '';
+    width: 20px;
+    height: 20px;
+    right: -2px;
+    top: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 2;
+  }
+
+  .card__description-item {
+    padding-right: 28px;
+    padding-top: 2px;
+    max-width: 180px;
+    padding-bottom: 3px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &_gray-done {
+      &:after {
+        @extend %todo-icon;
+        background-image: url("assets/done-gray.svg");
+      }
+    }
+
+    &_gray-undone {
+      &:after {
+        @extend %todo-icon;
+        background-image: url("assets/undone-gray.svg");
+      }
+    }
+
+    &_gray-done {
+      &:after {
+        @extend %todo-icon;
+        background-image: url("assets/done-gray.svg");
+      }
+    }
+
+    &_white-undone {
+      &:after {
+        @extend %todo-icon;
+        background-image: url("assets/undone-white.svg");
+      }
+    }
+
+    &_white-done {
+      &:after {
+        @extend %todo-icon;
+        background-image: url("assets/done-white.svg");
+      }
+    }
+  }
+
+  .card__description-title {
+    margin-bottom: 10px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card__add-info {
+    text-align: end;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
