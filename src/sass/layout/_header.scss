@@ -16,18 +16,16 @@
   align-items: center;
   gap: 4rem;
 
-  @media  screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 }
 
-.navigation__link {
+.navigation__link a {
   cursor: pointer;
   transition: all 0.3s ease-in;
 
   &:hover {
-    .nav-link-font {
-      color: $color-brand-1-light-s;
-    }
+    color: $color-brand-1-light-s;
   }
 }
