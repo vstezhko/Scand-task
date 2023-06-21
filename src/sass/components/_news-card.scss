@@ -61,6 +61,20 @@
     .author {
       flex-grow: 0;
     }
+
+    @media screen and (max-width: 755px) {
+      min-width: 250px;
+      max-height: 550px;
+
+      .news-card__image {
+        height: 329px;
+      }
+
+
+
+    }
+
+
   }
 
 

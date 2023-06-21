@@ -38,6 +38,10 @@
   align-items: center;
   @extend %btn-font;
 
+  &::placeholder {
+    text-align: center;
+  }
+
   &:focus-visible {
     outline: none;
   }
@@ -45,5 +49,10 @@
   &::placeholder {
     @extend %paragraphs-s_black;
     font-weight: 400;
+  }
+
+  @include media-mobile {
+    width: 100%;
+    padding: 12px 18px;
   }
 }
